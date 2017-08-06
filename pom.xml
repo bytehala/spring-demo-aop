@@ -4,7 +4,7 @@
 	<groupId>com.luv2code</groupId>
 	<artifactId>spring-demo-aop</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	
+
 	<properties>
 		<spring-version>4.3.9.RELEASE</spring-version>
 		<aspectj-version>1.8.10</aspectj-version>
@@ -36,30 +36,31 @@
 
 	<dependencies>
 		<!-- https://mvnrepository.com/artifact/org.aspectj/aspectjweaver -->
+		
 		<dependency>
 			<groupId>org.aspectj</groupId>
-			<artifactId>aspectjweaver</artifactId>
+			<artifactId>aspectjrt</artifactId>
 			<version>${aspectj-version}</version>
 		</dependency>
-		
+
 		<dependency>
-            <groupId>org.aspectj</groupId>
-            <artifactId>aspectjrt</artifactId>
-            <version>${aspectj-version}</version>
-        </dependency>
-		
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-aspects</artifactId>
+			<version>${spring-version}</version>
+		</dependency>
+
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-core</artifactId>
 			<version>${spring-version}</version>
 		</dependency>
-		
+
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-context</artifactId>
 			<version>${spring-version}</version>
 		</dependency>
-		
+
 
 
 	</dependencies>
