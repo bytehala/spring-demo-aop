@@ -8,11 +8,13 @@ import org.springframework.stereotype.Component;
 @Component
 public class MyDemoLoggingAspect {
 	
-	// thi is where we add all of our related advices for logging
+	// this is where we add all of our related advices for logging
 	
 	// let's start with an @Before advice
 	
-	@Before("execution(public void com.luv2code.aopdemo.dao.AccountDao.addAccount())")
+	// .. means 0 or more parameters, empty means no parameters, * means 1 or more parameters
+	
+	@Before("execution(public void com.luv2code.aopdemo.dao.AccountDao.addAccount(..))")
 	public void beforeAddAccountAdvice() {
 		System.out.println("\n===>> Executing @Before advice on addAccount()");
 	}
