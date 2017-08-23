@@ -14,7 +14,7 @@ public class MyDemoLoggingAspect {
 	
 	// .. means 0 or more parameters, empty means no parameters, * means 1 or more parameters
 	
-	@Before("execution(public void com.luv2code.aopdemo.dao.AccountDao.addAccount(..))")
+	@Before("execution(* add*())")
 	public void beforeAddAccountAdvice() {
 		System.out.println("\n===>> Executing @Before advice on addAccount()");
 	}
